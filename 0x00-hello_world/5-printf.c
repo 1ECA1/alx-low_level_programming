@@ -2,8 +2,7 @@
 
 
 
-/*
- *
+/**
  * main - Entry point
  *
  * Descrption - prinnt digit from to zero
