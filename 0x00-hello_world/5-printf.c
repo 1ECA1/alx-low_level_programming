@@ -2,17 +2,14 @@
 
 
 
-/**
+/*
  *
  * main - Entry point
  *
- * Return: Always 0 (Success)
+ * Descrption - prinnt digit from to zero
  *
- *
+ * Return: 0
  */
-
-
-
 int main(void)
 
 {
