@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
 *mai - programe that prints number
@@ -9,6 +10,7 @@
 */
 
 int main(void)
+
 {
 int num = 1;
 while (num++ < 100)
