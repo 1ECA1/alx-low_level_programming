@@ -3,6 +3,7 @@
 /**
 *swap_int - swap two integers' values
 *@a: first integer
+*@b: second integer
 *Returns returns nothing
 */
 
