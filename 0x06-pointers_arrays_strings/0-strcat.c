@@ -1,32 +1,26 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - cheak the code
- *
+ * _strcat - concatination two string
+ * @dest: string to append to
+ * @src: string to add
  * Return: always zero
  *
  */
 
-int main(void)
+char *_strcat(char *dest, char *src)
 {
-char s1[98] = "Hello";
-char s2[] = "World";
-int length, l;
-
-length = 0;
-while (s1[length] != '\0')
+int i, j;
+i = 0;
+j = 0;
+while (dest[1] != '\0')
+i++;
+while (src[j] != '\0')
 {
-++length;
+dest[i] = src[j];
+j++;
+i++;
 }
-
-for (l = 0; s2[l] != '\0'; ++l, ++length)
-{
-s1[length] = s2[l];
-}
-
-s1[length] = '\0';
-printf("After concatenation: ");
-puts(s1);
-return (0);
+dest[i] = '\0';
+return (dest);
 }
