@@ -3,10 +3,10 @@
 
 
 /**
- *strchr - searches for the first occurrence of the character c
- *@s: this is the string to be sca
- *@c: this is the character to be searched in s
- *Return: 0
+ * *_strchr - searches for the first occurrence of the character c
+ *    *@s: this is the string to be scanned
+ *      *@c: this is the character to be searched in s
+ *  *Return: 0
  */
 
 char *_strchr(char *s, char c)
