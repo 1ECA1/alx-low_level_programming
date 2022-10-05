@@ -1,23 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-
-
 /**
- * main - check the code for ALX School students.
- * Return: Always 0.
+ * alloc_grid - a function that returns a pointer to a 2-D array of integers.
+ * @width: an input integer at number of columns
+ * @height: an input integer at number of rows
+ * Return: pointer to a 2D array, NULL on failure.
  */
 
-int main(void)
+int **alloc_grid(int width, int height)
 {
-char *s;
-s = _strdup("ALX SE");
-if (s == NULL)
+int **array, i = 0, j = 0;
+if (width <= 0 || height <= 0)
+return (NULL);
+array = (int **)malloc(sizeof(int *) * height);
+if (array == NULL)
+return (NULL);
+for (; i < height; i++)
 {
-printf("failed to allocate memory\n");
-return (1);
+array[i] = (int *)malloc(sizeof(int) * width);
+if (array[i] == NULL)
+return (NULL);
 }
-printf("%s\n", s);
-free(s);
-return (0);
+for (i = 0; i < height; i++)
+for (; j < width; j++)
+array[i][j] = 0;
+return (array);
 }
