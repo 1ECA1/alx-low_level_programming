@@ -1,5 +1,5 @@
-#ifndef MAIN_H_
-#define MAIN_H_
+#ifndef DOG_H_
+#define DOG_H_
 
 /**
  * struct dog - struct for a dog
@@ -10,14 +10,12 @@
  */
 
 
-
 struct dog
 {
 char *name;
 float age;
 char *owner;
 };
-
 
 typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
