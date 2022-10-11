@@ -9,7 +9,6 @@
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
-
 {
 dog_t *new_dog;
 char *cpyname, *cpyowner;
@@ -35,7 +34,6 @@ cpyname[i] = name[i];
 cpyname[i] = '\0';
 
 cpyowner = malloc(len_owner + 1);
-
 if (cpyowner == NULL)
 
 return (NULL);
